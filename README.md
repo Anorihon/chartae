@@ -25,5 +25,5 @@ Game modules (.tres and .gd) placed in separated folders by they namespace
 
 When i made this project, i missed one part from game rules - placing wind-rose by player. In my game, wind-rose placed in center of map by default. You are free to fix this or rebuild game by your view
 
-If you cant connect to your friend in multiplayer. Say your friend to do port forwarding, how to do this you can watch [here](https://www.youtube.com/watch?v=jfSLxs40sIw) or search by your self
+If you cant connect to your friend in multiplayer. Say your friend to do port forwarding on port 23023, how to do this you can watch [here](https://www.youtube.com/watch?v=jfSLxs40sIw) or search by your self
 > Sorry, i did not found way to detour this moment - if you know how to do this, let me know please!
