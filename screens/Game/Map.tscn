@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cell/Cell.tscn" type="PackedScene" id=1]
+[ext_resource path="res://screens/Game/Map.gd" type="Script" id=3]
+
+[node name="Map" type="GridContainer"]
+margin_top = 55.0
+margin_right = 450.0
+margin_bottom = 505.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 3
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 150.0
+margin_bottom = 150.0
+
+[node name="TopCenter" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_right = 300.0
+margin_bottom = 150.0
+
+[node name="TopRight" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_right = 450.0
+margin_bottom = 150.0
+
+[node name="MiddleLeft" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 150.0
+margin_right = 150.0
+margin_bottom = 300.0
+
+[node name="MiddleCenter" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = 150.0
+margin_right = 300.0
+margin_bottom = 300.0
+
+[node name="MiddleRight" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 150.0
+margin_right = 450.0
+margin_bottom = 300.0
+
+[node name="BotLeft" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 300.0
+margin_right = 150.0
+margin_bottom = 450.0
+
+[node name="BotCenter" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 450.0
+
+[node name="BotRight" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 300.0
+margin_right = 450.0
+margin_bottom = 450.0

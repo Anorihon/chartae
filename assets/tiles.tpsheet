@@ -1,0 +1,153 @@
+{
+	"textures": [
+		{
+			"image": "tiles.png",
+			"size": {
+				"w": 1605,
+				"h": 1605
+			},
+			"sprites": [
+				{
+					"filename": "tile000.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile001.png",
+					"region": {
+						"x": 1,
+						"y": 536,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile002.png",
+					"region": {
+						"x": 1,
+						"y": 1071,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile004.png",
+					"region": {
+						"x": 536,
+						"y": 1,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile005.png",
+					"region": {
+						"x": 1071,
+						"y": 1,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile006.png",
+					"region": {
+						"x": 536,
+						"y": 536,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile008.png",
+					"region": {
+						"x": 536,
+						"y": 1071,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile009.png",
+					"region": {
+						"x": 1071,
+						"y": 536,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "tile010.png",
+					"region": {
+						"x": 1071,
+						"y": 1071,
+						"w": 533,
+						"h": 533
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a77b4699fda07cae78000220859f9a41:716965e5b36917949161da2b0efe32d3:3bac8801286e6fbd2e0d331bbbe42dfb$"
+	}
+}

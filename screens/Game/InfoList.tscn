@@ -1,0 +1,92 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://screens/Game/InfoList.gd" type="Script" id=1]
+
+[node name="InfoList" type="VBoxContainer"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoLabel" type="RichTextLabel" parent="."]
+margin_right = 1024.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 0, 300 )
+rect_clip_content = false
+size_flags_vertical = 7
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Turn 1 
+Player 1 ([color=#d35e00]Earth[/color]) move 
+Made sequential rotations: 0"
+text = "Turn 1 
+Player 1 (Earth) move 
+Made sequential rotations: 0"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnBox" type="MarginContainer" parent="."]
+margin_top = 540.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_constants/margin_top = 20
+
+[node name="BtnDone" type="Button" parent="BtnBox"]
+margin_top = 20.0
+margin_right = 150.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 150, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "BTN_DONE"
+
+[node name="GameEnd" type="GridContainer" parent="BtnBox"]
+visible = false
+margin_top = 20.0
+margin_right = 1024.0
+margin_bottom = 120.0
+custom_constants/vseparation = 20
+custom_constants/hseparation = 20
+columns = 2
+
+[node name="BtnToggleMarkers" type="Button" parent="BtnBox/GameEnd"]
+margin_right = 150.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 150, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "BTN_TOGGLE_MARKERS"
+
+[node name="BtnPlayAgain" type="Button" parent="BtnBox/GameEnd"]
+margin_left = 170.0
+margin_right = 320.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 150, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "BTN_PLAY_AGAIN"
+
+[node name="BtnHome" type="Button" parent="BtnBox/GameEnd"]
+margin_top = 60.0
+margin_right = 150.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 150, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "BTN_HOME"
+[connection signal="pressed" from="BtnBox/BtnDone" to="." method="_on_BtnDone_pressed"]
+[connection signal="pressed" from="BtnBox/GameEnd/BtnToggleMarkers" to="." method="_on_BtnToggleMarkers_pressed"]
+[connection signal="pressed" from="BtnBox/GameEnd/BtnPlayAgain" to="." method="_on_BtnPlayAgain_pressed"]
+[connection signal="pressed" from="BtnBox/GameEnd/BtnHome" to="." method="_on_BtnHome_pressed"]

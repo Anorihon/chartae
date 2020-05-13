@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://layouts/Btn.tscn" type="PackedScene" id=1]
+[ext_resource path="res://layouts/PopupRules.gd" type="Script" id=2]
+
+
+[node name="PopupRules" type="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer"]
+margin_left = 262.0
+margin_top = 115.0
+margin_right = 762.0
+margin_bottom = 485.0
+custom_constants/separation = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="RichTextLabel" parent="Panel/CenterContainer/VBoxContainer"]
+margin_right = 500.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 500, 300 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+
+[node name="BtnClose" parent="Panel/CenterContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_left = 125.0
+margin_top = 320.0
+margin_right = 375.0
+margin_bottom = 370.0
+size_flags_horizontal = 4
+text = "CLOSE"
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/BtnClose" to="." method="_on_BtnClose_pressed"]

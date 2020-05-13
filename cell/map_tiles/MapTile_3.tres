@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cell/MapTile.gd" type="Script" id=1]
+[ext_resource path="res://assets/tiles.sprites/tile002.tres" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+texture = ExtResource( 2 )
+sides = [ 1, 0, 1, 1, 1, 1, 0, 1 ]
+edges = [ Vector2( 0, 7 ), Vector2( 1, 6 ), Vector2( 2, 4 ), Vector2( 2, 5 ), Vector2( 3, 4 ), Vector2( 3, 5 ) ]

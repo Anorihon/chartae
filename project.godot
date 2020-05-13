@@ -1,0 +1,71 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Control",
+"class": "Cell",
+"language": "GDScript",
+"path": "res://cell/Cell.gd"
+}, {
+"base": "Resource",
+"class": "MapTile",
+"language": "GDScript",
+"path": "res://cell/MapTile.gd"
+}, {
+"base": "Object",
+"class": "Player",
+"language": "GDScript",
+"path": "res://player/Player.gd"
+}, {
+"base": "Object",
+"class": "PlayersManager",
+"language": "GDScript",
+"path": "res://player/PlayersManager.gd"
+} ]
+_global_script_class_icons={
+"Cell": "",
+"MapTile": "",
+"Player": "",
+"PlayersManager": ""
+}
+
+[application]
+
+config/name="Chartae"
+run/main_scene="res://screens/Home/Home.tscn"
+config/icon="res://icon.png"
+config/windows_native_icon="res://favicon.ico"
+
+[autoload]
+
+Global="*res://Global.gd"
+
+[display]
+
+mouse_cursor/custom_image="res://assets/img/cursor.png"
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "codeandweb.texturepacker" )
+
+[locale]
+
+translations=PoolStringArray( "res://assets/strings.en.translation", "res://assets/strings.ru.translation" )
+locale_filter=[ 1, [ "en", "ru" ] ]
+translation_remaps={
+"res://assets/flag_en.png": PoolStringArray( "res://assets/flag_ru.png:en" ),
+"res://assets/flag_ru.png": PoolStringArray( "res://assets/flag_en.png:en" )
+}
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

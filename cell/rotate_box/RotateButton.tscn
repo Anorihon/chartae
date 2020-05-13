@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/img/rotate-arrow.png" type="Texture" id=1]
+[ext_resource path="res://cell/rotate_box/RotateButton.gd" type="Script" id=2]
+
+
+[node name="RotateButton" type="Button"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 1024.0
+margin_bottom = 600.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Box" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="ColorRect" parent="Box"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.705882 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="TextureRect" parent="Box"]
+pause_mode = 1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -12.5
+margin_top = -12.5
+margin_right = 12.5
+margin_bottom = 12.5
+rect_min_size = Vector2( 25, 25 )
+mouse_filter = 2
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="." to="." method="_on_RotateButton_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_RotateButton_mouse_exited"]

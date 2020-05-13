@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cell/rotate_box/RotateButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cell/rotate_box/RotateBox.gd" type="Script" id=2]
+
+[node name="RotateBox" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftButton" parent="." instance=ExtResource( 1 )]
+margin_right = 512.0
+
+[node name="RightButton" parent="." instance=ExtResource( 1 )]
+margin_left = 512.0
+
+[node name="Arrow" parent="RightButton/Box" index="1"]
+flip_h = true
+[connection signal="visibility_changed" from="." to="." method="_on_RotateBox_visibility_changed"]
+[connection signal="pressed" from="LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="RightButton" to="." method="_on_RightButton_pressed"]
+
+[editable path="RightButton"]

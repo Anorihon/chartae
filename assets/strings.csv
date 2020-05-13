@@ -1,0 +1,85 @@
+keys	en	ru
+PLAY	Play	Играть
+MULTIPLAYER	Multiplayer	Мультиплеер
+BTN_BACK	Back	Назад
+RULES	Rules	Правила
+CREATE	Create	Создать
+IP_ADDRESS	Enter IP address	Введите IP-адрес
+JOIN	Join	Присоединиться
+BACK	Back	Назад
+RULES_TEXT	"[font=res://assets/fonts/title_h2.tres]INTRODUCTION[/font]
+Players take the role of cartographers arguing about the map of their latest discovery.
+
+[font=res://assets/fonts/title_h2.tres]THE GAME[/font]
+Players take turns starting from the first player. On their turn a player must perform one of this 2 actions:
+
+[font=res://assets/fonts/title_h3.tres]A. ROTATION[/font]
+Rotate any one tile in play 90 degrees clockwise.
+
+[i]Note: A rotation action cannot be performed more than two times in a row so if both players choose the rotation action consecutively, the next player’s action must be a placement action.[/i]
+
+[font=res://assets/fonts/title_h3.tres]B. PLACEMENT[/font]
+To place a new card, click on the cell with the plus sign icon. Then you can freely rotate the placed card. After, click ""Done"" to complete the action.
+
+The placement is free, there are no restrictions to match land or sea zones.
+
+[i]Note: it is compulsory to build a 3x3 square map with the tiles, starting with the windrose tile. When a side of the map reaches the size of 3 tiles, then that side its fixed, and players cannot place to further increase the size.[/i]
+
+
+After performing their action, the player must pass the turn.Turns continue until the last tile has been placed and a 3x3 tile map has been created.
+
+[font=res://assets/fonts/title_h3.tres]SCORING[/font]
+When the map is created, check the greatest number of connected tiles for each kind of terrain (land and sea).  A tile is connected to another if they are adjacent and both have the same uninterrupted terrain on both the sides where they meet. Corners do not count as connections. The player who connected the greatest number of tiles with their dominant terrain in a single group, is declared the winner. In case of tie, the player who placed the last tile loses the match.
+
+[center][img=360]res://assets/img/rules_score.png[/img][/center]"	"[font=res://assets/fonts/title_h2.tres]СУТЬ ИГРЫ[/font]
+Игроки берут на себя роль картографов, спорящих о карте их последних открытий
+
+[font=res://assets/fonts/title_h2.tres]ИГРА[/font]
+По очереди игроки должны выполнить одно из следующих действий:
+
+[font=res://assets/fonts/title_h3.tres]А. ПОВОРОТ КАРТОЧКИ[/font]
+Поверните любую карточку на 90 градусов по часовой стрелке.
+
+[i]Примечание: поворот не может быть выполнен более двух раз подряд, то есть, если оба игрока выбирают действие поворота друг за другом, то следующее действие должно быть расстановка карточек.[/i]
+
+[font=res://assets/fonts/title_h3.tres]Б. РАССТАНОВКА КАРТОЧЕК[/font]
+Для размещения новой карточки, кликните по ячейке с иконкой плюсика. Далее можете свободно вращать размещенную карточку. После, нажмите кнопку ""Готово"" для завершения действия.
+
+Расстановка карточек – свободная, без ограничений на соответствие частей моря и суши.
+
+[i]Примечание: единственное условие – в конце игры карточки должны создать карту квадратной формы размером 3х3. Соответственно, когда одна сторона карты уже имеет три карточки, она фиксируется и больше не подлежит увеличению в размере.[/i]
+
+
+После выполнения действия одним игроком наступает очередь следующего игрока до тех пор, пока не будет размещена последняя карточка, создающая карту размером 3х3
+
+[font=res://assets/fonts/title_h3.tres]ПОДСЧЕТ ОЧКОВ[/font]
+Когда карта создана, посчитайте количество смежных карточек отдельно для каждого типа местности (суша и море). Карточки считаются смежными, если они находятся рядом и имеют одинаковый тип местности на той стороне, где они соприкасаются (по крайней мере половина стороны должна быть смежной). Игрок, с наибольшим количеством смежных карточек одного типа местности (суша или море), объявляется победителем. В случае одинакового количества смежных карточек, игрок, разместивший последнюю карточку, проигрывает матч.
+
+[center][img=360]res://assets/img/rules_score.png[/img][/center]"
+CLOSE	Close	Закрыть
+BTN_DONE	Done	Готово
+BTN_TOGGLE_MARKERS	Toggle Markers	Маркеры очков
+BTN_PLAY_AGAIN	Play Again	Играть снова
+BTN_HOME	Home	На главную
+PLAYER	Player	Игрок
+EARTH	Earth	Земля
+SEA	Sea	Море
+TURN	Turn	Ход
+ROTATION_PERFORMED	Rotation performed	Вращение выполнено
+MOVE_OF	Move of	Ходит
+ROTATION_LIMIT_ALERT	The limit of rotations in row is reached!	Лимит последовательных поворотов, достигнут!
+ROTATION_NOTE	You can free rotate placed tile. After, confirm by press Done button	Вы можете свободно вращать карточку. После, завершите действие нажав на кнопку Готово
+PLACE_NEW	Place new tile	Разместите новый тайл
+PLACE_NEW_ROTATE	Place new tile or rotate existed on 90deg	Разместите новый тайл или поверните уже выложенный
+PLACE_NOTE	* For place new tile - click on cell with plus icon	* Для размещения нового тайла, нажмите на ячейку с плюсиком
+ROTATE_NOTE	** For rotate - hover opened tile and click on arrow	** Для вращения тайла – наведите курсор на тайл и нажмите на нужную стрелочку
+BTN_CANCEL	Cancel	Отмена
+WAIT_PLAYER	"Waiting for second Player.
+Game will start immediately after player will connect"	"Ожидание второго игрока.
+Игра начнется сразу после подключения игрока"
+CONNECTING	Connecting...	Подключаемся...
+CONNECTION_FAILED	Connection failed	Ошибка подключения
+TERMINATE_PEER_DISCONNECTED	Other player has been disconnected. Game terminated	Другой игрок был отключен. Игра прекращена
+YOU	You	Вы
+YOUR_MOVE	Your move	Ваш ход
+SCORE	score	очки
