@@ -2,6 +2,7 @@
 
 This game is pc adaptation of board game [Chartae](https://boardgamegeek.com/boardgame/269257/chartae)
 Art resources taken from [here](http://boardgamer.ru/chartae-raspechataj-i-igraj)
+You can download build for PC from [here](https://www.dropbox.com/sh/tkrsasut3jdngg4/AACA00boQ_lt-k3-7CTweM-na?dl=0)
 Made on Godot 3.2
 
 Goals of project was to learn more deeply Godot, multiplayer part and got some fun of game develop
